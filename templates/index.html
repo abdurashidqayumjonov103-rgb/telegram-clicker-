@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ZorCoin Clicker</title>
+    <!-- Telegram Web App SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Foydalanuvchi profili -->
+        <header class="header">
+            <div class="user-card">
+                <span class="user-label">O'yinchi:</span>
+                <span id="username" class="username">Yuklanmoqda...</span>
+            </div>
+        </header>
+
+        <!-- Balans bo'limi -->
+        <div class="balance-card">
+            <div class="coin-display">
+                <span class="coin-symbol">🪙</span>
+                <h1 id="balance">0</h1>
+            </div>
+            <p class="sub-text">Bosing va coin yiging!</p>
+        </div>
+
+        <!-- Tanga bosish zonasi -->
+        <div class="click-zone">
+            <button id="coin-btn" class="coin-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/825/825500.png" alt="Coin" class="coin-img">
+            </button>
+        </div>
+
+        <!-- Statistika va Upgrade -->
+        <div class="info-container">
+            <div class="stat-box">
+                <span class="stat-label">1 bosish:</span>
+                <span id="click-power" class="stat-value">+1</span>
+            </div>
+        </div>
+
+        <div class="action-container">
+            <button id="upgrade-btn" class="btn-upgrade">
+                ⚡ Bosishni Kuchaytirish (<span id="upgrade-cost">100</span> coin)
+            </button>
+        </div>
+
+        <!-- Reyting bo'limi -->
+        <div class="leaderboard-card">
+            <h3>🏆 TOP-10 O'yinchilar</h3>
+            <ul id="leaderboard-list" class="leaderboard-list">
+                <li>Yuklanmoqda...</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- JavaScript faylini ulash -->
+    <script src="/static/app.js"></script>
+</body>
+</html>
